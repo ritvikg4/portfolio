@@ -28,11 +28,6 @@ a {
 a:hover {
   background-color: #004d6e;
   color: #ffffff;
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
-  padding-left: 0.15em;
-  padding-right: 0.15em;
-  border-radius: 0.12em;
 }
 
 img {
