@@ -23,7 +23,7 @@ export default function Home({ allPostsData }) {
           I'm a student at the University of Illinois Urbana-Champaign majoring in Computer Engineering. 
         </p>
       </section>
-      Please find my resume linked here: <Link href="/cv.pdf">(CV)</Link>
+      Please find my resume linked here: <Link href="/cv.pdf" target='_blank'>(CV)</Link>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Projects</h2>
         <ul className={utilStyles.projects}>
