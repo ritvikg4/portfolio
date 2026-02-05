@@ -13,10 +13,10 @@ export default function IEM() {
                     Illini Electric Motorsports (IEM) is the University of Illinois Urbana-Champaign's Formula SAE team.
                     <br/>
                     <br/>
-                    As part of the team, I am leading the development of a custom 48V to 24V buck converter rated at 800W, achieving less than 500 mV output ripple. 
+                    As part of the team, I am leading the development of the main vehicle control board (or Safety Board).
                     <br/>
                     <br/>
-                    Using Altium, I designed schematics for the vehicle control board, incorporating power distribution, fault management, and status indicators. I validated circuit interconnections through a detailed top-level schematic prior to PCB layout and analyzed component datasheets to select optimal candidates for the main control board. My final component choices minimized PCB footprint, improved thermal reliability, and increased efficiency by 4%. 
+                    Using Altium, I designed schematics for the Safety Board, incorporating power distribution, fault management, and status indicators. I executed a structured testing and validation plan for every circuit, using the gathered data to inform and implement design improvements for the V2 iteration.
                     <br/>
                     <br/>
                     On the software side, I developed an ISO-TP transport layer test plan to validate CAN communication across multiple ECUs, ensuring compliance with ISO-TP 2016 standards and verifying message delivery using PCAN-USB. I also built a cost-effective hardware-in-the-loop (HIL) test setup using LabJack U6-Pro to simulate ECU I/O, integrating a Python toolchain into the Bazel build system to run automated tests with pytest and the LabJack API. Signal analysis and plotting were performed using Matplotlib and NumPy.
