@@ -20,6 +20,10 @@ export default function IEM() {
                     <br/>
                     <br/>
                     On the software side, I developed an ISO-TP transport layer test plan to validate CAN communication across multiple ECUs, ensuring compliance with ISO-TP 2016 standards and verifying message delivery using PCAN-USB. I also built a cost-effective hardware-in-the-loop (HIL) test setup using LabJack U6-Pro to simulate ECU I/O, integrating a Python toolchain into the Bazel build system to run automated tests with pytest and the LabJack API. Signal analysis and plotting were performed using Matplotlib and NumPy.
+                    <br/>
+                    <br/>
+                    A render of the completed V2 Safety Board for 2026:
+                    <img  src="/images/safetyv2_render.png" alt="Safety Board V2 Render" width={450} />
                 </p>
             </main>
         </Layout>
