@@ -3,10 +3,10 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
-import { AiOutlineGithub, AiFillYoutube, AiFillLinkedin, AiOutlineTwitter } from 'react-icons/ai';
+import { AiOutlineGithub, AiFillYoutube, AiFillLinkedin } from 'react-icons/ai';
 
-const name = 'ritvik';
-export const siteTitle = "ritvik";
+const name = 'Ritvik';
+export const siteTitle = "Ritvik";
 
 export default function Layout({ children, home }) {
   return (
@@ -17,26 +17,26 @@ export default function Layout({ children, home }) {
       </Head>
       
       <div className={styles.container}>
-        <header>
-          <>
-            <div className={styles.nav}>
-              <Link className={utilStyles.navTitle} href="/"><h1 className={utilStyles.heading2Xl}>{name}</h1></Link>
-              <ul className={styles.socials}>
-                <li><a href="https://github.com/ritvikg4" target="_blank"><AiOutlineGithub /></a></li>
-                <li><a href="https://www.youtube.com/channel/UC1yCGQaEkfsrulmjq4FT6JQ" target="_blank"><AiFillYoutube /></a></li>
-                <li><a href="https://www.linkedin.com/in/ritvikgupta11/" target="_blank"><AiFillLinkedin /></a></li>
-              </ul>
-            </div>
-          </>
-        </header>
+        <nav className={styles.nav}>
+          <Link href="/" className={styles.navName}>{name}</Link>
+          <ul className={styles.navLinks}>
+            <li><Link href="/projects">Projects</Link></li>
+            <li><Link href="/writing">Writing</Link></li>
+          </ul>
+        </nav>
         <main className={styles.main}>{children}</main>
         {!home && (
           <div className={styles.backToHome}>
-            <Link href="/thoughts">← Back to thoughts</Link>
+            <Link href="/writing">← Back to writing</Link>
           </div>
         )}
+        <div className={styles.socials}>
+          <a href="https://github.com/ritvikg4" target="_blank"><AiOutlineGithub /></a>
+          <a href="https://www.youtube.com/channel/UC1yCGQaEkfsrulmjq4FT6JQ" target="_blank"><AiFillYoutube /></a>
+          <a href="https://www.linkedin.com/in/ritvikgupta11/" target="_blank"><AiFillLinkedin /></a>
+        </div>
         <div className={styles.copyright}>
-          © 2025 (Ritvik Gupta)
+          © 2026 Ritvik Gupta
         </div>
       </div>
     </>

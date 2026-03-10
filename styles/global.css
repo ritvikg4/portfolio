@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Cormorant+Upright:wght@300;500&family=Bebas+Neue&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Merriweather', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5em;
-  background: #dedede; /* softer off-white */
-  color: #374151; /* slightly greyer dark text */
+  font-family: 'EB Garamond', Georgia, serif;
+  line-height: 1.6;
+  background: #faf9f7;
+  color: #1c1b19;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
 }
 
 * {
@@ -18,16 +17,12 @@ body {
 }
 
 a {
-  color: #004d6e;
-  position: relative;
+  color: #0066cc;
   text-decoration: none;
-  transition: all 0.12s ease;
-  font-weight: 400;
 }
 
 a:hover {
-  background-color: #004d6e;
-  color: #ffffff;
+  color: #004499;
 }
 
 img {
@@ -35,16 +30,12 @@ img {
   display: block;
 }
 
-main p a {
-  color: #004d6e;
-  font-weight: 600;
-  position: relative;
-  text-decoration: none;
+section {
+  margin-bottom: 40px;
 }
 
-main p a:hover {
-  color: #004d6e;
-  background: transparent;
-  padding: 0;
-  text-decoration: underline;
+@media (max-width: 480px) {
+  .postDate {
+    display: none;
+  }
 }

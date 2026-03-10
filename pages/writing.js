@@ -14,14 +14,14 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ allPostsData }) {
+export default function Writing({ allPostsData }) {
   function search() {
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("blogInput");
     filter = input.value.toUpperCase();
     ul = document.getElementById("blogList");
     li = ul.getElementsByTagName("li");
-  
+
     for (i = 0; i < li.length; i++) {
       a = li[i].getElementsByTagName("a")[0];
       txtValue = a.textContent || a.innerText;
@@ -31,23 +31,22 @@ export default function Home({ allPostsData }) {
         li[i].style.display = "none";
       }
     }
-  
+
     console.log(input);
   }
-  
+
   return (
     <Layout>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingX1}>Thoughts</h2>
+        <h2 className={utilStyles.headingXl}>Writing</h2>
         <input type="text" id="blogInput" className={utilStyles.searchBar} onKeyUp={() => search()} placeholder="Search..." />
-        <ul className={utilStyles.list} id="blogList">
+        <ul className={utilStyles.postList} id="blogList">
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
+            <li key={id}>
+              <Link href={`/posts/${id}`}>
+                <span className={utilStyles.postTitle}>{title}</span>
+                <span className={utilStyles.postDate}><Date dateString={date} /></span>
+              </Link>
             </li>
           ))}
         </ul>
