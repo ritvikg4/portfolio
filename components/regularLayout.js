@@ -22,6 +22,7 @@ export default function Layout({ children, home }) {
           <ul className={styles.navLinks}>
             <li><Link href="/projects">Projects</Link></li>
             <li><Link href="/writing">Writing</Link></li>
+            <li><Link href="/bookclub">Book Club</Link></li>
           </ul>
         </nav>
         <main className={styles.main}>{children}</main>
