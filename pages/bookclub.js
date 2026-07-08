@@ -46,9 +46,16 @@ const books = [
     status: 'Finished',
     cover: 'https://covers.openlibrary.org/b/isbn/9780441172719-L.jpg',
   },
+  {
+    title: 'Foundation',
+    author: 'Isaac Asimov',
+    note: 'A mathematician races to preserve knowledge as a galactic empire falls.',
+    status: 'Finished',
+    cover: 'https://covers.openlibrary.org/b/id/14612610-L.jpg',
+  },
 ];
 
-const currentBook = books.find((b) => b.status === 'Reading');
+const currentBooks = books.filter((b) => b.status === 'Reading');
 const pastBooks = books.filter((b) => b.status !== 'Reading');
 
 export default function BookClub() {
@@ -79,31 +86,31 @@ export default function BookClub() {
         <h2 className={utilStyles.headingXl}>Book Club</h2>
         <p className={utilStyles.lightText}>Keeping track of books I&apos;m reading, 2026 and onwards</p>
 
-        {currentBook && (
+        {currentBooks.length > 0 && (
           <>
             <div className={utilStyles.sectionHead}>
               <h3 className={utilStyles.bookSectionTitle}>Currently Reading</h3>
               <div className={utilStyles.rule}></div>
             </div>
-            <div className={utilStyles.featuredBook}>
-              <img
-                className={utilStyles.featuredCover}
-                src={currentBook.cover}
-                alt={`${currentBook.title} cover`}
-              />
-              <div className={utilStyles.featuredInfo}>
-                <span className={utilStyles.featuredTitle}>{currentBook.title}</span>
-                <span className={utilStyles.featuredAuthor}>{currentBook.author}</span>
-                {currentBook.note && (
-                  <span className={utilStyles.featuredNote}>{currentBook.note}</span>
-                )}
-                {currentBook.date && (
-                  <span className={utilStyles.bookDate}>
-                    <Date dateString={currentBook.date} />
-                  </span>
-                )}
+            {currentBooks.map(({ title, author, note, date, cover }) => (
+              <div className={utilStyles.featuredBook} key={title}>
+                <img
+                  className={utilStyles.featuredCover}
+                  src={cover}
+                  alt={`${title} cover`}
+                />
+                <div className={utilStyles.featuredInfo}>
+                  <span className={utilStyles.featuredTitle}>{title}</span>
+                  <span className={utilStyles.featuredAuthor}>{author}</span>
+                  {note && <span className={utilStyles.featuredNote}>{note}</span>}
+                  {date && (
+                    <span className={utilStyles.bookDate}>
+                      <Date dateString={date} />
+                    </span>
+                  )}
+                </div>
               </div>
-            </div>
+            ))}
           </>
         )}
 
