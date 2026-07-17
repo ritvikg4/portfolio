@@ -24,7 +24,7 @@ export default function Home({ allPostsData, allProjectsData }) {
         <p>
           <strong>Computer Engineering @ UIUC</strong>, expected Dec 2028. Concentrations in Electrical Hardware and Computer Architecture.<br />
           <strong>Intern @ Rivian</strong>, working on Low Voltage Electronics for R2 (launching mid-2026).<br />
-          <strong>Circuit Design @ Illini Electric Motorsports</strong>, leading development of the main vehicle control unit.
+          <strong>Circuit Design @ Illini Electric Motorsports</strong>, leading development of driver electronics.
         </p>
       </div>
       <section>
