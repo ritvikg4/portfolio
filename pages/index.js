@@ -22,7 +22,7 @@ export default function Home({ allPostsData, allProjectsData }) {
     <Layout home>
       <div className={utilStyles.hero}>
         <p>
-          <strong>Computer Engineering @ UIUC</strong>, expected Dec 2028. Concentrations in Embedded Systems and Computer Architecture.<br />
+          <strong>Computer Engineering @ UIUC</strong>, expected Dec 2028. Concentrations in Electrical Hardware and Computer Architecture.<br />
           <strong>Intern @ Rivian</strong>, working on Low Voltage Electronics for R2 (launching mid-2026).<br />
           <strong>Circuit Design @ Illini Electric Motorsports</strong>, leading development of the main vehicle control unit.
         </p>
