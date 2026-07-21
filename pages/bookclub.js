@@ -5,10 +5,17 @@ import Date from '../components/date';
 
 const books = [
   {
+    title: 'Red Rising',
+    author: 'Pierce Brown',
+    note: 'A lowly Red inflitrates the ranks of the elite Golds',
+    status: 'Reading',
+    cover: 'https://covers.openlibrary.org/b/isbn/9780345539793-L.jpg',
+  },
+  {
     title: 'The Oregon Trail',
     author: 'Francis Parkman',
     note: 'A firsthand account of the trail and frontier life in 1846.',
-    status: 'Reading',
+    status: 'Finished',
     cover: 'https://covers.openlibrary.org/b/id/1967272-L.jpg',
   },
   {
