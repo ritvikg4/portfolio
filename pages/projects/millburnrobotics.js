@@ -6,20 +6,17 @@ export default function MillburnAI() {
     return (
         <Layout>
             <h1 className={utilStyles.headingXl}>Millburn Robotics</h1>
-            <p className={utilStyles.lightText}>4 years of high school competitive robotics</p>
+            <p className={utilStyles.lightText}>Four years of competitive robotics — VEX AI &amp; FIRST Tech Challenge</p>
             <img  src="/images/robot.png" alt="24-25 Robot" width={500} />
             <main>
                 <p>
-                    In my freshman year of High School, I joined the robotics program.
-                    It was made up of 4 VEX Robotics teams, and 1 VEX AI team. I joined the 
-                    VEX AI team, with the goal of competing in the new VEX AI competition.
-                    Our objective was to make a robot to play that year's VEX challenge (Tipping Point)
-                    fully autonomously. 
-                    More information can be found on the <a href="https://millburnai.org" target="_blank">website</a> that I built for the team,
-                    as well as our <a href="https://www.youtube.com/@millburnrobotics174" target="_blank">YouTube channel</a>.
+                    I joined my high school's robotics program as a freshman. It was made up of four VEX Robotics teams and one VEX AI team; I joined the VEX AI team with the goal of competing in the then-new VEX AI competition, building a robot to play that year's challenge (Tipping Point) fully autonomously.
                     <br/>
                     <br/>
-                    Since 2022, I have been participating in the FIRST Tech Challenge robotics competition. I have been a captain of my school's team since 2023. Through my experience, I have gained many skills, from programming for robotics to operating heavy machinery in our school's robotics lab. I have been a part of team #8405, and was a founding member of team #23650. 
+                    More on that work lives on the <a href="https://millburnai.org" target="_blank">team website</a> I built, along with our <a href="https://www.youtube.com/@millburnrobotics174" target="_blank">YouTube channel</a>.
+                    <br/>
+                    <br/>
+                    Since 2022, I've also competed in the FIRST Tech Challenge, serving as captain of my school's team from 2023. Along the way I picked up everything from robotics programming to operating heavy machinery in our shop. I competed with team #8405 and was a founding member of team #23650.
                 </p>
             </main>
         </Layout>

@@ -5,10 +5,17 @@ import Date from '../components/date';
 
 const books = [
   {
+    title: '1776',
+    author: 'David McCullough',
+    note: 'The ordinary men behind Washington who held the line through a desperate fight for independence.',
+    status: 'Reading',
+    cover: 'https://covers.openlibrary.org/b/isbn/0743226712-L.jpg',
+  },
+  {
     title: 'Red Rising',
     author: 'Pierce Brown',
-    note: 'A lowly Red inflitrates the ranks of the elite Golds',
-    status: 'Reading',
+    note: 'A lowly Red inflitrates the ranks of the elite Golds.',
+    status: 'Finished',
     cover: 'https://covers.openlibrary.org/b/isbn/9780345539793-L.jpg',
   },
   {
