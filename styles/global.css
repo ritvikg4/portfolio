@@ -4,11 +4,12 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'EB Garamond', Georgia, serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.6;
   background: #faf9f7;
   color: #1c1b19;
-  font-size: 17px;
+  font-size: 16px;
+  letter-spacing: -0.005em;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -17,12 +18,12 @@ body {
 }
 
 a {
-  color: #0066cc;
+  color: #0f6b7a;
   text-decoration: none;
 }
 
 a:hover {
-  color: #004499;
+  color: #0a4c57;
 }
 
 img {

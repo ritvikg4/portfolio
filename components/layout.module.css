@@ -8,6 +8,22 @@
   /* No specific padding, let sections handle */
 }
 
+/* Content images on project/detail pages: consistent breathing room. */
+.main img:not([class]) {
+  display: block;
+  margin: 1.75rem 0;
+  border-radius: 6px;
+}
+
+/* Constrain body copy on detail pages to a comfortable reading measure. */
+.main main {
+  max-width: 680px;
+}
+
+.main main p {
+  line-height: 1.65;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -78,5 +94,5 @@
 }
 
 .backToHome a:hover {
-  color: #aaa8a2;
+  color: #0f6b7a;
 }

@@ -22,9 +22,9 @@ export default function Home({ allPostsData, allProjectsData }) {
     <Layout home>
       <div className={utilStyles.hero}>
         <p>
-          <strong>Computer Engineering @ UIUC</strong>, expected Dec 2028. Concentrations in Electrical Hardware and Computer Architecture.<br />
-          <strong>Intern @ Rivian</strong>, working on Low Voltage Electronics for R2 (launching mid-2026).<br />
-          <strong>Circuit Design @ Illini Electric Motorsports</strong>, leading development of driver electronics.
+          <strong>Computer Engineering @ UIUC</strong>, electrical hardware &amp; computer architecture.<br />
+          <strong>Intern @ Rivian</strong>, low voltage electronics for the R2 platform.<br />
+          <strong>Circuit Design @ Illini Electric Motorsports</strong>, driver electronics.
         </p>
       </div>
       <section>
