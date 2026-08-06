@@ -94,5 +94,5 @@
 }
 
 .backToHome a:hover {
-  color: #0f6b7a;
+  text-decoration: underline;
 }

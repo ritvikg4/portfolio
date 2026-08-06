@@ -50,6 +50,11 @@
   line-height: 1.65;
 }
 
+.hero strong {
+  color: #1c1b19;
+  font-weight: 700;
+}
+
 .sectionHead {
   display: flex;
   align-items: baseline;
@@ -80,7 +85,7 @@
 }
 
 .projectList a:hover {
-  color: #0f6b7a;
+  text-decoration: underline;
 }
 
 .postList {
@@ -106,7 +111,7 @@
 }
 
 .postList a:hover .postTitle {
-  color: #0f6b7a;
+  text-decoration: underline;
 }
 
 .postDate {
@@ -121,12 +126,12 @@
   margin-top: 12px;
   font-size: .88rem;
   font-style: italic;
-  color: #0f6b7a;
+  color: #908d87;
   text-decoration: none;
 }
 
 .seeMore:hover {
-  color: #0a4c57;
+  color: #1c1b19;
 }
 
 .searchBar {
@@ -148,8 +153,8 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.375rem 0.75rem;
-  background-color: rgba(15, 107, 122, 0.1);
-  color: #0f6b7a;
+  background-color: rgba(28, 27, 25, 0.06);
+  color: #1c1b19;
   text-decoration: none;
   border-radius: 0;
   font-weight: 500;
@@ -159,7 +164,7 @@
 }
 
 .resumeButton:hover {
-  background-color: rgba(15, 107, 122, 0.18);
+  background-color: rgba(28, 27, 25, 0.1);
 }
 
 .lightText {

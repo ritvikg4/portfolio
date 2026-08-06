@@ -18,12 +18,14 @@ body {
 }
 
 a {
-  color: #0f6b7a;
-  text-decoration: none;
+  color: #1c1b19;
+  text-decoration: underline;
+  text-decoration-color: #d2cfc8;
+  text-underline-offset: 2px;
 }
 
 a:hover {
-  color: #0a4c57;
+  text-decoration-color: #1c1b19;
 }
 
 img {
